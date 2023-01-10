@@ -109,7 +109,7 @@ const stylePlay = StyleSheet.create({
 
   /* body */
   body: {
-    marginTop: 35,
+    marginTop: 50,
     flex: 6,
   },
 
@@ -140,6 +140,7 @@ const stylePlay = StyleSheet.create({
     marginHorizontal: 10,
     size: 14,
     fontWeight: 'bold',
+    color: 'red',
   },
   viewPlayer: {
     justifyContent: 'center',

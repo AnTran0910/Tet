@@ -6,7 +6,7 @@ const HomeScreen = props => {
   const {navigation} = props;
   // const goToPlayScreen = () => {
   //   navigation.navigate('PlayScreen');
-    
+
   // };
 
   const [player1, setPlayer1] = useState('');
@@ -56,7 +56,14 @@ const HomeScreen = props => {
         <View>
           <Pressable
             style={StylePlayerScreen.btnStart}
-            onPress={() => navigation.navigate('PlayScreen', {player1, player2, player3, player4})} >
+            onPress={() =>
+              navigation.navigate('PlayScreen', {
+                player1,
+                player2,
+                player3,
+                player4,
+              })
+            }>
             <Text>Start</Text>
           </Pressable>
         </View>

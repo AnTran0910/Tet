@@ -10,7 +10,7 @@ import ResultScreen from './src/components/screen/ResultScreen';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import { AppContextProvider } from './src/context/AppContext';
+import {AppContextProvider} from './src/context/AppContext';
 
 const Stack = createNativeStackNavigator();
 const App = () => {
@@ -19,10 +19,18 @@ const App = () => {
     // <PlayScreen></PlayScreen>
     <NavigationContainer>
       <Stack.Navigator initialRouteName="HomeScreen">
-        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen
+          options={{headerShown: false}}
+          name="HomeScreen"
+          component={HomeScreen}
+        />
         <Stack.Screen name="PlayerScreen" component={PlayerScreen} />
         <Stack.Screen name="PlayScreen" component={PlayScreen} />
-        <Stack.Screen name="ResultScreen" component={ResultScreen} />
+        <Stack.Screen
+          options={{headerShown: false}}
+          name="ResultScreen"
+          component={ResultScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

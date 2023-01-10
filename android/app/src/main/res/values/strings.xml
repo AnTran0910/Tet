@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">GhiDiem</string>
+    <!-- <string name="app_name">GhiDiem</string> -->
+    <string name="app_name">Ghi Điểm Đánh Bài</string>
+
 </resources>
